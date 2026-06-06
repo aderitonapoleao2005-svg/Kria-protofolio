@@ -1,0 +1,21 @@
+*html{
+    padding:0;
+    margin: 0;
+}
+
+.head{
+    background-color: aqua;
+}
+
+.navbar{
+    display:flex;
+    justify-content: end;
+}
+.navbar ul,li {
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navbar a{
+    text-decoration: none;
+}
