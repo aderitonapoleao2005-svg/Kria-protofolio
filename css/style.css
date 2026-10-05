@@ -31,7 +31,12 @@ body.naroman .skills .skills-box:hover{
 }
 body.naroman #contact .container p{
   color: black;
-} 
+}
+
+body.naroman .butaun a {
+  background: #1faba1;
+  color: black;
+}
 #komprimentus{
   display: flex;
   justify-content: center;
