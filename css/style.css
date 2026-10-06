@@ -5,16 +5,25 @@
   scroll-behavior: smooth;
 }
 
+#mode{
+  background:green;
+  color: white;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#mode:hover{
+  background-color: #1ffba1;
+}
 body.naroman{
   background: #f2f2f2;
 }
 body.naroman #komprimentus{
+  color: rgb(150, 0, 0.2);
+}
 
-  color: black;
-}
-#mode{
-  background: red;
-}
 body.naroman .about-box div p{
   color: black;
 }
@@ -69,6 +78,11 @@ header {
   background-color: blue;
   z-index: 999;
 }
+header h1{
+  color: bisque;
+  text-decoration: underline;
+  
+}
   header #minibutton,#miniapp{
     display: none;
   }
@@ -78,6 +92,7 @@ header {
   display: flex;
 }
 .logo p {
+  padding-top: 6px;
   display: flex;
   flex-direction: column;
   font-weight: bold;
