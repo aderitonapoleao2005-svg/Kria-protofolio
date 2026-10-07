@@ -7,7 +7,12 @@
 
 const butaun=document.getElementById("mode");
 butaun.addEventListener("click",()=>{
-  document.body.classList.toggle("naroman")
+  if(document.body.classList.toggle("naroman")){
+   document.getElementById("mode").innerHTML="Dark";
+  }else{
+    document.getElementById("mode").innerHTML="Light";
+    
+  }
 })
 
 function fotiOras() {
@@ -17,6 +22,7 @@ function fotiOras() {
 function formatu(valor) {
   return valor < 10 ? "0" + valor : valor;
 }
+
 
 function realtime() {
   const oras = fotiOras().getHours();
@@ -58,7 +64,7 @@ const dia = fotiOras().getDate();
 const fulan = listfulan[fotiOras().getMonth()];
 const tinan = fotiOras().getFullYear();
 let completeDate = loron + " " + formatu(dia) + " " + fulan + " " + tinan;
-document.getElementById("data").innerHTML = completeDate;
+document.getElementById("data").innerHTML = completeDate;setInterval(realtime)
 
 let time = fotiOras().getHours();
 let Text = "";
