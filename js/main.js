@@ -91,7 +91,7 @@ titulu.addEventListener("mouseout", filaFali);
 let portofolio = [
   { naran: "Website Bee Diak", status: "Ideia deit seidauk dezenvolve" },
   { naran: "Calculator", status: "Konsege dezenvolve ona" },
-  { naran: "TodoList", status: "Remata ona", link: "/to-do-list/index.html"},
+  { naran: "TodoList", status: "Remata ona", link: "to-do-list/index.html"},
 ];
 
 const listProjects = document.getElementById("lista-projetu");
