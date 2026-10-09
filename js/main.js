@@ -91,13 +91,19 @@ titulu.addEventListener("mouseout", filaFali);
 let portofolio = [
   { naran: "Website Bee Diak", status: "Ideia deit seidauk dezenvolve" },
   { naran: "Calculator", status: "Konsege dezenvolve ona" },
-  { naran: "To-do List", status: "sei iha prosesu atu dezenvolve" },
+  { naran: "TodoList", status: "Remata ona", link: "/to-do-list/index.html"},
 ];
 
 const listProjects = document.getElementById("lista-projetu");
 portofolio.forEach((item) => {
   const card = document.createElement("div");
   card.textContent = `${item.naran} - ${item.status}`;
+  if(item.link){
+    const a=document.createElement("a");
+    a.href=item.link;
+    a.textContent=">Hare"
+    card.append(a);
+  }
   listProjects.append(card);
   card.classList.add("projetu-box");
   card.addEventListener("mouseover",()=>{
